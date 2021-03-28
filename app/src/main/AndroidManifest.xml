@@ -11,6 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TyProject">
+        <activity android:name=".About_me"></activity>
+        <activity android:name=".Lesion_types" />
         <activity android:name=".TipsActivity">
             android:parentActivityName=".MainActivity">
             <!-- The meta-data tag is required if you support API level 15 and lower -->

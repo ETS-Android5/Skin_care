@@ -5,5 +5,13 @@
     <string name="app_name">Skin Care</string>
     <string name="gallerybtn">Gallery</string>
     <string name="camerabtn">Camera</string>
-    <string name="title">This app can be used to detect different types of Skin Lesions From image just click the image or select directly from the gallery</string>
+    <string name="title">This app can be used to detect different types of Skin Lesions From image
+        just click the image or select directly from the gallery</string>
+    <string name="melanocytic_navi">A melanocytic naevus (American spelling ‘nevus’), or mole, is a common benign
+        skin lesion due to a local proliferation of pigment cells (melanocytes).
+        It is sometimes called a naevocytic naevus or just \'naevus\' (but note
+        that there are other types of naevi). A brown or black melanocytic naevus contains the pigment
+        melanin, so may also be called a pigmented naevus.A melanocytic naevus can be
+        present at birth (a congenital melanocytic naevus) or appear later (an acquired naevus).
+        There are various kinds of congenital and acquired melanocytic naevi (American spelling \'nevi\')</string>
 </resources>

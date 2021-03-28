@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        SkinCancerClassifier.init(getAssets(), "skincan74_ep19.tflite");
+        SkinCancerClassifier.init(getAssets(), "march_28_skin_opti.tflite");
         bSelGallery = findViewById(R.id.gallerychooser);
         bSelCamera = findViewById(R.id.Cameraclicker);
         tvHeading = findViewById(R.id.top_Heading);
@@ -63,16 +63,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (requestCode) {
             case 0: //select from camera
                 if (resultCode == RESULT_OK) {
-//                    Uri selectedImage = data.getData();
                     Bitmap bitmap = (Bitmap) data.getExtras().get("data");
                     startActivity(new Intent(this, Report.class).putExtra("image-bitmap", bitmap));
                 }
                 break;
             case 1: //select from gallery
                 if (resultCode == RESULT_OK) {
-//                    Bitmap photo = (Bitmap) data.getExtras().get("data");
                     Uri imageUri = data.getData();
-//                        bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), imageUri);
                     startActivity(new Intent(this, Report.class).putExtra("image-uri", imageUri));
                 }
                 break;
@@ -127,6 +124,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.nav_display:
                 Toast.makeText(getApplicationContext(),"SDisplay",Toast.LENGTH_SHORT).show();
+                Intent lesion = new Intent(getApplicationContext(),Lesion_types.class);
+                startActivity(lesion);
                 break;
 
             case R.id.nav_tips:
