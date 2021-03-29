@@ -118,24 +118,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {
 
-            case R.id.nav_refer :
-                Toast.makeText(getApplicationContext(),"Sharing",Toast.LENGTH_SHORT).show();
-                break;
-
-            case R.id.nav_display:
+            case R.id.nav_lesion:
                 Toast.makeText(getApplicationContext(),"SDisplay",Toast.LENGTH_SHORT).show();
                 Intent lesion = new Intent(getApplicationContext(),Lesion_types.class);
                 startActivity(lesion);
                 break;
 
-            case R.id.nav_tips:
-                Intent tips = new Intent(getApplicationContext(),TipsActivity.class);
-                Toast.makeText(getApplicationContext(),"Tips",Toast.LENGTH_SHORT).show();
-                startActivity(tips);
-                break;
             case R.id.nav_tutorial :
                 Toast.makeText(getApplicationContext(),"Tutorial",Toast.LENGTH_SHORT).show();
+                Intent tutorial = new Intent(getApplicationContext(),Tutorial.class);
+                startActivity(tutorial);
+
                 break;
+
+            case R.id.nav_about:
+                Toast.makeText(getApplicationContext(),"About me",Toast.LENGTH_SHORT).show();
+                Intent about = new Intent(getApplicationContext(),About_me.class);
+                startActivity(about);
+                break;
+
+            case R.id.nav_refer :
+                Toast.makeText(getApplicationContext(),"Sharing",Toast.LENGTH_SHORT).show();
+                break;
+
         }
         this.drawer.closeDrawer((int) GravityCompat.START);
         return true;

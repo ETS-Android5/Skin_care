@@ -9,9 +9,9 @@
         <item  android:title="Home"/>
     </group>
     <group android:id="@+id/grp1" android:checkableBehavior="none">
-        <item  android:id="@+id/nav_display" android:title="Lesion Types"/>
+        <item  android:id="@+id/nav_lesion" android:title="Lesion Types"/>
         <item  android:id="@+id/nav_tutorial" android:title="How To Use"/>
-        <item  android:id="@+id/nav_tips" android:title="About Me"/>
+        <item  android:id="@+id/nav_about" android:title="About Me"/>
         <item  android:id="@+id/nav_refer" android:title="Share this App"/>
     </group>
 </menu>
