@@ -18,19 +18,25 @@
             android:id="@+id/searchFile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SKINCANCERApp"
+            android:text="@string/app_name"
             android:textColor="@color/white"
-            android:visibility="invisible" />
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="18dp" />
     </androidx.appcompat.widget.Toolbar>
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -43,13 +49,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
-                    android:text="Melanocytic Navi" />
+                    android:text="@string/melanocytic_navi_h"
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/Melanocytic_b"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
+                    android:textSize="18sp"
                     android:text="@string/melanocytic_navi" />
 
                 <ImageView
@@ -57,163 +65,197 @@
                     android:layout_width="254dp"
                     android:layout_height="192dp"
                     android:layout_margin="16dp"
-                    tools:srcCompat="@android:drawable/btn_star_big_on" />
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/Melanoma_h"
                     android:layout_width="match_parent"
+                    android:textSize="24sp"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
-                    android:text="Melanocytic Navi" />
+                    android:text="@string/Melanoma_h" />
 
                 <TextView
                     android:id="@+id/Melanoma_b"
                     android:layout_width="match_parent"
+                    android:textSize="18sp"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
-                    android:text="@string/melanocytic_navi" />
+                    android:text="@string/Melanoma" />
 
                 <ImageView
                     android:id="@+id/Melanoma_i"
                     android:layout_width="254dp"
                     android:layout_height="192dp"
                     android:layout_margin="16dp"
-                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                    android:layout_gravity="center"
+                    android:src="@drawable/melanoma"/>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/Benign_h"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
-                    android:text="Melanocytic Navi" />
+                    android:textSize="24sp"
+                    android:text="@string/Benign_keratosis_like_lesions_h" />
 
                 <TextView
                     android:id="@+id/Benign_b"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
-                    android:text="@string/melanocytic_navi" />
+                    android:textSize="18sp"
+                    android:text="@string/Benign_keratosis_like_lesions" />
 
                 <ImageView
                     android:id="@+id/Benign_i"
                     android:layout_width="254dp"
                     android:layout_height="192dp"
                     android:layout_margin="16dp"
-                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                    android:layout_gravity="center"
+                    android:src="@drawable/benign_keratosis" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/Basal_h"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
-                    android:text="Melanocytic Navi" />
+                    android:textSize="24sp"
+                    android:text="@string/Basal_cell_carcinoma_h" />
 
                 <TextView
                     android:id="@+id/Basal_b"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
-                    android:text="@string/melanocytic_navi" />
+                    android:textSize="18sp"
+                    android:text="@string/Basal_cell_carcinoma" />
 
                 <ImageView
                     android:id="@+id/Basal_i"
                     android:layout_width="254dp"
                     android:layout_height="192dp"
                     android:layout_margin="16dp"
-                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                    android:layout_gravity="center"
+                    android:src="@drawable/basal_cell"
+                     />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/Actinic_h"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
-                    android:text="Melanocytic Navi" />
+                    android:textSize="24sp"
+                    android:text="@string/Actinic_keratoses_h" />
 
                 <TextView
                     android:id="@+id/Actinic_b"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
-                    android:text="@string/melanocytic_navi" />
+                    android:textSize="18sp"
+                    android:text="@string/Actinic_keratoses" />
 
                 <ImageView
                     android:id="@+id/Actinic_i"
                     android:layout_width="254dp"
                     android:layout_height="192dp"
                     android:layout_margin="16dp"
-                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                    android:layout_gravity="center"
+                    android:src="@drawable/actinic_keratosis"
+                    />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/Vascular_h"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
-                    android:text="Melanocytic Navi" />
+                    android:textSize="24sp"
+                    android:text="@string/Vascular_lesions_h" />
 
                 <TextView
                     android:id="@+id/Vascular_b"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
-                    android:text="@string/melanocytic_navi" />
+                    android:textSize="18sp"
+                    android:text="@string/Vascular_lesions" />
 
                 <ImageView
                     android:id="@+id/Vascular_i"
                     android:layout_width="254dp"
                     android:layout_height="192dp"
                     android:layout_margin="16dp"
-                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                    android:layout_gravity="center"
+                    android:src="@drawable/vascular_lesion" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/Dermatofibroma_h"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
-                    android:text="Melanocytic Navi" />
+                    android:textSize="24sp"
+                    android:text="@string/Dermatofibroma_h" />
 
                 <TextView
                     android:id="@+id/Dermatofibroma_b"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
-                    android:text="@string/melanocytic_navi" />
+                    android:textSize="18sp"
+                    android:text="@string/Dermatofibroma" />
 
                 <ImageView
                     android:id="@+id/Dermatofibroma_i"
                     android:layout_width="254dp"
                     android:layout_height="192dp"
                     android:layout_margin="16dp"
-                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/melanocytic_navi"
+                    android:src="@drawable/dermatofibroma" />
             </LinearLayout>
 
         </LinearLayout>

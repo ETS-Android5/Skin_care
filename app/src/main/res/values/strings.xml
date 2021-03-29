@@ -7,11 +7,94 @@
     <string name="camerabtn">Camera</string>
     <string name="title">This app can be used to detect different types of Skin Lesions From image
         just click the image or select directly from the gallery</string>
-    <string name="melanocytic_navi">A melanocytic naevus (American spelling ‘nevus’), or mole, is a common benign
-        skin lesion due to a local proliferation of pigment cells (melanocytes).
-        It is sometimes called a naevocytic naevus or just \'naevus\' (but note
-        that there are other types of naevi). A brown or black melanocytic naevus contains the pigment
-        melanin, so may also be called a pigmented naevus.A melanocytic naevus can be
-        present at birth (a congenital melanocytic naevus) or appear later (an acquired naevus).
-        There are various kinds of congenital and acquired melanocytic naevi (American spelling \'nevi\')</string>
+
+
+    <string name="melanocytic_navi_h">Melanocytic nevus</string>
+    <string name="melanocytic_navi">Melanocytic nevi are benign neoplasms or
+        hamartomas composed of melanocytes, the pigment-producing cells that constitutively colonize the epidermis.
+        Melanocytes are derived from the neural crest and migrate during embryogenesis to selected ectodermal
+        sites (primarily the skin and the CNS), but also to the eyes and the ears. Ectopic melanocytes have
+        been identified at autopsy in the gastrointestinal and genitourinary tracts. Congenital melanocytic
+        nevi are thought to represent an anomaly in embryogenesis and, as such, could be
+        considered, at least in a sense, malformations or hamartomas.
+        In contrast, most acquired melanocytic nevi are considered benign neoplasms.
+        Compare the images below. Melanocytic nevi occur in all mammalian species and
+        are especially common in humans, dogs, and horses.
+    </string>
+
+    <string name="Melanoma_h">Melanoma</string>
+    <string name="Melanoma">Melanoma, also redundantly known as malignant melanoma,
+        is a type of skin cancer that develops from the pigment-producing cells known
+        as melanocytes. Melanomas typically occur in the skin but may rarely occur in
+        the mouth, intestines or eye (uveal melanoma).
+    </string>
+
+
+    <string name="Benign_keratosis_like_lesions_h">Benign keratosis like lesions</string>
+    <string name="Benign_keratosis_like_lesions">Seborrheic keratoses are noncancerous (benign)
+        skin growths that some people develop as they age. They often appear on the back or
+        chest, but can occur on any part of the body. Seborrheic keratoses grow slowly,
+        in groups or singly. Most people will develop at least one seborrheic keratosis
+        during their lifetime.
+
+        The appearance of seborrheic keratoses can vary widely.
+        They may be light tan to brown or black. The most common
+        texture is rough, with a bumpy, grainy surface that crumbles easily.
+        However, they also may be smooth and waxy. They usually look like they\'ve
+        been stuck onto the skin. While some are tiny, others grow larger
+        than 3 cm in diameter.
+    </string>
+
+
+    <string name="Basal_cell_carcinoma_h">Basal cell carcinoma</string>
+    <string name="Basal_cell_carcinoma">
+        Basal cell carcinoma is a type of skin cancer. Basal cell carcinoma begins
+        in the basal cells — a type of cell within the skin that produces new skin
+        cells as old ones die off.
+
+        Basal cell carcinoma often appears as a slightly transparent bump
+        on the skin, though it can take other forms. Basal cell carcinoma
+        occurs most often on areas of the skin that are exposed to the sun,
+        such as your head and neck.
+
+        Most basal cell carcinomas are thought to be caused by long-term exposure
+        to ultraviolet (UV) radiation from sunlight.
+    </string>
+
+
+    <string name="Actinic_keratoses_h">Actinic keratoses</string>
+    <string name="Actinic_keratoses">
+        An actinic keratosis (ak-TIN-ik ker-uh-TOE-sis) is a rough, scaly patch
+        on the skin that develops from years of sun exposure.
+        It\'s often found on the face, lips, ears, forearms, scalp, neck or back of the hands.
+
+        Also known as a solar keratosis, an actinic keratosis grows slowly
+        and usually first appears in people over 40. You can reduce your
+        risk of this skin condition by minimizing your sun exposure and
+        protecting your skin from ultraviolet (UV) rays.
+
+        Left untreated, the risk of actinic keratoses turning
+        into a type of skin cancer called squamous cell carcinoma is about 5% to 10%
+    </string>
+
+
+    <string name="Vascular_lesions_h">Vascular lesions</string>
+    <string name="Vascular_lesions">Vascular lesions are relatively common abnormalities
+        of the skin and underlying tissues, more commonly known as birthmarks. There are
+        three major categories of vascular lesions: Hemangiomas, Vascular Malformations,
+        and Pyogenic Granulomas. While these birthmarks can look similar at times,
+        they each vary in terms of origin and necessary treatment.
+    </string>
+
+
+    <string name="Dermatofibroma_h">Dermatofibroma</string>
+    <string name="Dermatofibroma">Dermatofibroma (superficial benign fibrous histiocytoma)
+        is a common cutaneous nodule of unknown etiology that occurs more often in women.
+        Dermatofibroma frequently develops on the extremities (mostly the lower legs)
+        and is usually asymptomatic, although pruritus and tenderness can be present.
+        It is actually the most common painful skin tumor.
+         A number of well-described, histologic subtypes of
+        dermatofibroma have been reported. Removal of the tumor
+        is usually not typically required unless diagnostic
+        uncertainty exists or particularly troubling symptoms are present.</string>
 </resources>
