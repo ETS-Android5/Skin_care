@@ -22,15 +22,14 @@ import java.util.Collection;
 
 public class SkinCancerClassifier {
 
-    private static final int IMAGE_MEAN = 255;
-    private static final int IMAGE_STD = 255;
+    private static final int IMAGE_MEAN = 160;
+    private static final int IMAGE_STD = 46;
     static int wigth = 90 , height =120;
 
     static  int PIXEL_SIZE = 3;
     static AssetManager assetManager;
     static String modelPath = "";
     static Interpreter interpreter;
-    static int x=0;
     static String[] label = {
             "Melanocytic nevi",
             "Melanoma",
@@ -46,13 +45,14 @@ public class SkinCancerClassifier {
         interpreter.run(inpBuffer, out);
         Log.i("output is ", "predict: " + Arrays.toString(out[0]));
         float max = max(out[0]);
+        int x = 0;
         for(int i = 0 ; i<7;i++){
             if(out[0][i]==max){
                 x = i;
                 break;
             }
         }
-        return Integer.toString(x)+" " + label[x] +" 1|"+  Float.toString(out[0][0])  +" 2|"+ Float.toString(out[0][1]) +" 3|" + Float.toString(out[0][2]) +" 4|"+ Float.toString(out[0][3]) +" 5|"+ Float.toString(out[0][4])+" 6|" + Float.toString(out[0][5])+" 7|"+ Float.toString(out[0][6]);
+        return "Report:  " + label[x];
 
     }
 
@@ -65,6 +65,7 @@ public class SkinCancerClassifier {
         }
 
         // Finds and returns max
+
         float max = array[0];
         for (int j = 1; j < array.length; j++) {
             if (Float.isNaN(array[j])) {
