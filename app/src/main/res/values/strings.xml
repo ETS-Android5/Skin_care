@@ -2,7 +2,7 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="app_name">Skin Care</string>
+    <string name="app_name">Skin Lesion</string>
     <string name="gallerybtn">Gallery</string>
     <string name="camerabtn">Camera</string>
     <string name="title">This app can be used to detect different types of Skin Lesions From image

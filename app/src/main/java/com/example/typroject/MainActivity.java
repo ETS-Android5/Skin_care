@@ -139,6 +139,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.nav_refer :
                 Toast.makeText(getApplicationContext(),"Sharing",Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(Intent.ACTION_SEND);
+                i.setType("text/plain");
+                i.putExtra(Intent.EXTRA_SUBJECT, "Sharing URL");
+                i.putExtra(Intent.EXTRA_TEXT, "http://www.google.com");
+                startActivity(Intent.createChooser(i, "Share URL"));
                 break;
 
         }

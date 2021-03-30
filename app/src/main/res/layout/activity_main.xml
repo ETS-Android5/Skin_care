@@ -17,12 +17,7 @@ tools:openDrawer="start">
         android:background="@color/red"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize" >
-        <TextView android:textColor="@color/white"
-            android:text="SKINCANCERApp"
-            android:id="@+id/searchFile"
-            android:visibility="invisible"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -79,5 +74,10 @@ tools:openDrawer="start">
 </LinearLayout>
 
 
-<com.google.android.material.navigation.NavigationView android:layout_gravity="start" android:id="@+id/navigation_drawer" android:layout_width="250dp" android:layout_height="match_parent" app:headerLayout="@layout/navigation_header" app:menu="@menu/drawer_menu"/>
+<com.google.android.material.navigation.NavigationView android:layout_gravity="start"
+    android:id="@+id/navigation_drawer"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    app:headerLayout="@layout/navigation_header"
+    app:menu="@menu/drawer_menu"/>
 </androidx.drawerlayout.widget.DrawerLayout>
