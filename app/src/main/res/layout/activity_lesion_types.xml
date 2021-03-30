@@ -67,24 +67,14 @@
                 android:layout_margin="16dp"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
                     <TextView
                         android:id="@+id/Melanocytic_h"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
+                        android:layout_marginBottom="0dp"
                         android:text="@string/melanocytic_navi_h"
                         android:textSize="24sp" />
-                    <ImageButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_more"/>
-                </LinearLayout>
-
-
 
                 <TextView
                     android:id="@+id/Melanocytic_b"
@@ -114,6 +104,15 @@
                         android:background="@color/black"
                         />
                 </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btn1_les"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="right"/>
             </LinearLayout>
 
             <View
@@ -166,6 +165,15 @@
                         android:background="@color/black"
                         />
                 </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btn2_les"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="right"/>
             </LinearLayout>
 
             <View
@@ -217,6 +225,15 @@
                         android:background="@color/black"
                         />
                 </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btn3_les"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="right"/>
             </LinearLayout>
 
             <View
@@ -268,6 +285,15 @@
                         android:background="@color/black"
                         />
                 </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btn4_les"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="right"/>
             </LinearLayout>
 
             <View
@@ -319,6 +345,14 @@
                         android:background="@color/black"
                         />
                 </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/btn5_les"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="right"/>
             </LinearLayout>
 
             <View
@@ -370,6 +404,15 @@
                         android:background="@color/black"
                         />
                 </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btn6_les"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="right"/>
             </LinearLayout>
 
             <View
@@ -421,6 +464,15 @@
                         android:background="@color/black"
                         />
                 </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btn7_les"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="right"/>
             </LinearLayout>
 
             <View
