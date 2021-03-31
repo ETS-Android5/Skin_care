@@ -6,9 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 public class About_me extends AppCompatActivity {
     ImageView im_home;
+    LinearLayout email;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,5 +23,15 @@ public class About_me extends AppCompatActivity {
                 startActivity(to_home);
             }
         });
+
+//        email = findViewById(R.id.email);
+//        email.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent email = new Intent(Intent.CATEGORY_APP_EMAIL);
+//                startActivity(email);
+//
+//            }
+//        });
     }
 }

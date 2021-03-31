@@ -38,7 +38,7 @@ public class Lesion_types extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "http://www.example.com";
+                String url = "https://en.wikipedia.org/wiki/Melanocytic_nevus#:~:text=A%20melanocytic%20nevus%20(also%20known,mole%20with%20any%20nevus%20form.";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
@@ -47,7 +47,7 @@ public class Lesion_types extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "http://www.example.com";
+                String url = "https://en.wikipedia.org/wiki/Melanoma#:~:text=Melanoma%2C%20also%20redundantly%20known%20as,or%20eye%20(uveal%20melanoma).";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
@@ -56,7 +56,7 @@ public class Lesion_types extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "http://www.example.com";
+                String url = "https://en.wikipedia.org/wiki/Seborrheic_keratosis";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
@@ -65,7 +65,7 @@ public class Lesion_types extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "http://www.example.com";
+                String url = "https://www.mayoclinic.org/diseases-conditions/basal-cell-carcinoma/symptoms-causes/syc-20354187#:~:text=Basal%20cell%20carcinoma%20is%20a%20type%20of%20skin%20cancer.,it%20can%20take%20other%20forms.";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
@@ -74,7 +74,7 @@ public class Lesion_types extends AppCompatActivity {
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "http://www.example.com";
+                String url = "https://www.mayoclinic.org/diseases-conditions/actinic-keratosis/symptoms-causes/syc-20354969";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
@@ -83,7 +83,7 @@ public class Lesion_types extends AppCompatActivity {
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "http://www.amazon.com";
+                String url = "https://www.ssmhealth.com/cardinal-glennon/pediatric-plastic-reconstructive-surgery/hemangiomas";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
@@ -92,7 +92,7 @@ public class Lesion_types extends AppCompatActivity {
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "http://www.google.com";
+                String url = "https://dermnetnz.org/topics/dermatofibroma/";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);

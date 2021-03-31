@@ -105,4 +105,12 @@
     </string>
     <string name="location">Mumbai, Maharashtra, India</string>
     <string name="more">Read more</string>
+    <string name="about">About: </string>
+    <string name="about_b">Developer &amp; programmer</string>
+    <string name="about_b2">A good software developer with decent problem solving skills\nhard working and creative.</string>
+    <string name="about_app_h">About Application:</string>
+    <string name="about_app">This app can be used to detect \ncommmon Lesion types including\ncancer this app is build using \nconvolution neural network \nin TensorFlow Framework which
+        \nis further integrated in Android \nwith elegant and user \nfriendly UI. </string>
+    <string name="ver">Version 1.0.0</string>
+
 </resources>
