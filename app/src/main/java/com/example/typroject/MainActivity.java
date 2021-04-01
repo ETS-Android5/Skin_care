@@ -94,8 +94,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         if (v instanceof ImageView) {
             Bitmap image = ((BitmapDrawable) ((ImageView) v).getDrawable()).getBitmap();
-           // String imageClass = ImageClassifier.predict(image);
-           // Toast.makeText(this, imageClass, Toast.LENGTH_SHORT).show();
         }
         switch (v.getId()) {
             case R.id.Cameraclicker:
@@ -156,5 +154,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.action_exit){
+            finishAndRemoveTask();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

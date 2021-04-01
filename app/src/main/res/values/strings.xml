@@ -112,5 +112,29 @@
     <string name="about_app">This app can be used to detect \ncommmon Lesion types including\ncancer this app is build using \nconvolution neural network \nin TensorFlow Framework which
         \nis further integrated in Android \nwith elegant and user \nfriendly UI. </string>
     <string name="ver">Version 1.0.0</string>
+    <string name="more1">More</string>
 
+    <string name="hows1">1. This is the main page of the the Application here you have
+to choose image either from gallery of click with camera. You can click on the hamburger icon on the top left corner to acesses the
+        navigation drawer. Also there is 3 dots on top right corner which you can click and choose exit to exit the app.</string>
+    <string name="hows2">2. On this screen the report will be shown after choosing the image if you want you can read more about the particular Skin lesion by clicking on read more
+    or else you can choose another image for detection.\nNote: Home icon on the toolbar is used to directly navigate to
+        the home screen or you can also use back button or gesture of you phone to navigate.</string>
+    <string name="hows3">3. This is the navigation drawer of the screen which contains diffrent options as follows:\n
+           a. "Home" to navigate on home screen.\n
+           b. "How To Use" This section demonstrates how to use \tthis application.\n
+           c. "About me" This section has short introduction about \tme along which contact details.\n
+           d. "Share this App" This option is used to share the link of \tthis Application.
+    </string>
+    <string name="how4">4. This is Lesion Types section where you can read about different Skin lesions and also there is read more button
+    on each subsection which can be used to read more about particular lesion on the Internet.</string>
+
+    <string name="how5">5. This is about me section here you will find some information about me also 4 buttons i.e email, linkdin, github, twitter.
+        which will redirect you to respective social media or service.</string>
+
+    <string name="about_t">About Me</string>
+    <string name="report_t">Report</string>
+    <string name="hows_t">How To Use</string>
+    <string name="les_t">Lesion Types</string>
+    <string name="exit">Exit</string>
 </resources>

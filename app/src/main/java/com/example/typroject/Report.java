@@ -32,7 +32,7 @@ public class Report extends AppCompatActivity implements View.OnClickListener {
     private static final int CAMERA_REQUEST_CODE = 0;
     private static final int GALLERY_REQUEST_CODE = 1;
     private static final int CAMERA_PERM_REQUEST_CODE = 2;
-    ImageView imView;
+    ImageView imView ,im_home;
     LinearLayout progressLayout;
     TextView tvRes;
     TextView tvChooseImageLabel;
@@ -56,6 +56,14 @@ public class Report extends AppCompatActivity implements View.OnClickListener {
 
         bGallery.setOnClickListener(this);
         bCamera.setOnClickListener(this);
+        im_home = findViewById(R.id.tool_home);
+        im_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent to_home = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(to_home);
+            }
+        });
 
         Intent intent = getIntent();
         Bitmap imageBitmap = intent.getParcelableExtra("image-bitmap");
@@ -140,5 +148,10 @@ public class Report extends AppCompatActivity implements View.OnClickListener {
                 startActivityForResult(pickPhoto, GALLERY_REQUEST_CODE);
                 break;
         }
+    }
+
+    public void readmore(View view){
+        Intent i = new Intent(getApplicationContext(), Lesion_types.class);
+        startActivity(i);
     }
 }
