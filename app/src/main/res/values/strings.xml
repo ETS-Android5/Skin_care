@@ -5,8 +5,8 @@
     <string name="app_name">Skin Lesion</string>
     <string name="gallerybtn">Gallery</string>
     <string name="camerabtn">Camera</string>
-    <string name="title">This app can be used to detect different types of Skin Lesions From image
-        just click the image or select directly from the gallery</string>
+    <string name="title">This app can be used to classify different types of Skin Lesions From image
+        just click the image or select directly from the gallery.</string>
 
 
     <string name="melanocytic_navi_h">Melanocytic nevus</string>

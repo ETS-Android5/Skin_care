@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        SkinCancerClassifier.init(getAssets(), "march_28_skin_opti.tflite");
+        SkinLesionClassifier.init(getAssets(), "march_28_skin_opti.tflite");
         bSelGallery = findViewById(R.id.gallerychooser);
         bSelCamera = findViewById(R.id.Cameraclicker);
         tvHeading = findViewById(R.id.top_Heading);
@@ -117,20 +117,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (menuItem.getItemId()) {
 
             case R.id.nav_lesion:
-                Toast.makeText(getApplicationContext(),"SDisplay",Toast.LENGTH_SHORT).show();
                 Intent lesion = new Intent(getApplicationContext(),Lesion_types.class);
                 startActivity(lesion);
                 break;
 
             case R.id.nav_tutorial :
-                Toast.makeText(getApplicationContext(),"Tutorial",Toast.LENGTH_SHORT).show();
                 Intent tutorial = new Intent(getApplicationContext(),Tutorial.class);
                 startActivity(tutorial);
 
                 break;
 
             case R.id.nav_about:
-                Toast.makeText(getApplicationContext(),"About me",Toast.LENGTH_SHORT).show();
                 Intent about = new Intent(getApplicationContext(),About_me.class);
                 startActivity(about);
                 break;

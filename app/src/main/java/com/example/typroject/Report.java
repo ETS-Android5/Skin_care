@@ -1,11 +1,9 @@
 package com.example.typroject;
 
 import android.Manifest;
-import android.app.AppComponentFactory;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
-import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -25,7 +23,6 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import java.io.IOException;
-import java.util.Arrays;
 
 public class Report extends AppCompatActivity implements View.OnClickListener {
 
@@ -78,8 +75,7 @@ public class Report extends AppCompatActivity implements View.OnClickListener {
         }
         try {
             Bitmap image = ((BitmapDrawable) ((ImageView) imView).getDrawable()).getBitmap();
-            String imageClass = SkinCancerClassifier.predict(image);
-//            Toast.makeText(this, imageClass, Toast.LENGTH_SHORT).show();
+            String imageClass = SkinLesionClassifier.predict(image);
             tvRes.setText(imageClass);
         }
         catch (Exception e){
@@ -118,7 +114,7 @@ public class Report extends AppCompatActivity implements View.OnClickListener {
         progressLayout.setVisibility(View.VISIBLE);
         tvRes.setVisibility(View.GONE);
         imView.setImageBitmap(bitmap);
-        String imageClass = SkinCancerClassifier.predict(bitmap);
+        String imageClass = SkinLesionClassifier.predict(bitmap);
             Toast.makeText(this, imageClass, Toast.LENGTH_SHORT).show();
         tvRes.setText(imageClass);
         tvRes.setVisibility(View.VISIBLE);

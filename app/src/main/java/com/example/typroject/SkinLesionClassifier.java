@@ -4,13 +4,8 @@ import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.util.Log;
-import android.widget.Toast;
 
-import androidx.core.content.res.TypedArrayUtils;
-
-import org.tensorflow.lite.DataType;
 import org.tensorflow.lite.Interpreter;
-import org.tensorflow.lite.Tensor;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -18,9 +13,8 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.channels.FileChannel;
 import java.util.Arrays;
-import java.util.Collection;
 
-public class SkinCancerClassifier {
+public class SkinLesionClassifier {
 
     private static final int IMAGE_MEAN = 160;
     private static final int IMAGE_STD = 46;
@@ -31,13 +25,13 @@ public class SkinCancerClassifier {
     static String modelPath = "";
     static Interpreter interpreter;
     static String[] label = {
+            "Actinic keratoses",
+            "Basal cell carcinoma",
+            "Benign keratosis-like lesions",
+            "Dermatofibroma",
             "Melanocytic nevi",
             "Melanoma",
-            "Benign keratosis-like lesions",
-            "Basal cell carcinoma",
-            "Actinic keratoses",
-            "Vascular lesions",
-            "Dermatofibroma"};
+            "Vascular lesions"};
     public static String predict(Bitmap image) {
         ByteBuffer inpBuffer = preProcessImage(image);
 
@@ -99,8 +93,8 @@ public class SkinCancerClassifier {
     }
 
     public static void init(AssetManager assetManager, String model_path){
-        SkinCancerClassifier.assetManager = assetManager;
-        SkinCancerClassifier.modelPath = model_path;
+        SkinLesionClassifier.assetManager = assetManager;
+        SkinLesionClassifier.modelPath = model_path;
         interpreter = createInterpreter(assetManager, model_path);
     }
 
