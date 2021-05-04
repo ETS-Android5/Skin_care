@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent i = new Intent(Intent.ACTION_SEND);
                 i.setType("text/plain");
                 i.putExtra(Intent.EXTRA_SUBJECT, "Sharing URL");
-                i.putExtra(Intent.EXTRA_TEXT, "http://www.google.com");
+                i.putExtra(Intent.EXTRA_TEXT, "https://drive.google.com/file/d/1vGSOhytv20-F0Za8M6qBTrYBj7DQ-X6z/view?usp=sharing");
                 startActivity(Intent.createChooser(i, "Share URL"));
                 break;
 
